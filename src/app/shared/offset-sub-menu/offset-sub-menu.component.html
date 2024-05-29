@@ -1,0 +1,11 @@
+<div class="dropdown sub-dropdown-menu">
+  <a class="nav-link arrow-none nav-item" href="#" (mouseover)="openMenu()">
+    <span>
+      {{label}}
+    </span>
+    <i class="bi bi-chevron-right float-end"></i>
+  </a>
+  <ul class="dropdown-menu" [class.show]="isOpen">
+    <ng-content></ng-content>
+  </ul>
+</div>

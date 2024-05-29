@@ -1,23 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-/* Import global pour le fichier SCSS Bootstrap */
-
-
-
-
-.bg-body-primary{
-  background-color: var(--primary);
-}
-body {
-  margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: .875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #4b4b5a;
-  background-color: #f3f4f7;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -32,8 +20,8 @@ body {
   --white: #fff;
   --gray: #8c98a4;
   --gray-dark: #343a40;
-  --primary:  #21244e;
-  --secondary:  #e2e204;
+  --primary: #107ef4;
+  --secondary: #404a54;
   --success: #00c9a7;
   --info: #00dffc;
   --warning: #ffc107;
@@ -52,7 +40,6 @@ body {
   --font-family-sans-serif: "IBM Plex Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
 
 *,
 *::before,
@@ -100,39 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid #e2e7f1;
-  border-radius: .25rem;
-  margin-bottom: 24px;
-}
-.form-control {
-  display: block;
-  width: 100%;
-  padding: .45rem .9rem;
-  font-size: .875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #4b4b5a;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-.form-control:focus{
-  box-shadow: none;
-  border:1px solid var(--dark-soft)
 }
 
 abbr[title],
@@ -604,23 +558,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-.dropdown-item:focus, .dropdown-item:hover {
-  color: #1e2125;
-  background-color: #f8f9fa;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: .375rem 1.2rem;
-  clear: both;
-  font-weight: 400;
-  color: #4b4b5a;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
 
 @media (min-width: 576px) {
   .container {
@@ -638,12 +575,6 @@ pre code {
   .container {
     max-width: 960px;
   }
-  .topnav .dropdown-item {
-    padding: .5rem 1.25rem;
-    min-width: 180px;
-    margin: 0 .3rem;
-    width: auto;
-}
 }
 
 @media (min-width: 1200px) {
@@ -2063,14 +1994,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: var(--primary);
-  border-color: var(--light);
+  background-color: #107ef4;
+  border-color: #107ef4;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: #0a6bd4;
+  border-color: #0965c8;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2947,8 +2878,6 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4124,7 +4053,7 @@ a.badge-black-soft:focus, a.badge-black-soft.focus {
 }
 
 .bg-primary {
-  background-color: var(--primary) !important;
+  background-color: #107ef4 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -4134,7 +4063,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: var(--secondary)!important;
+  background-color: #404a54 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -11038,17 +10967,6 @@ div.code-toolbar > .toolbar a:hover {
 
 .ui-autocomplete-wrapper--dark .duik-search__category {
   color: white;
-}
-.dropdown-menu a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: var(--dark-soft);
-
-}
-
-.dropdown-item a:focus, .dropdown-menu a:hover {
-  color: var(--gray-dark);
 }
 
 /*------------------------------------
